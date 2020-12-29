@@ -14,6 +14,7 @@ h2 {
 }
 .tag-line {
 	text-align: center;
+	font-style: italic;;
 	padding-bottom: 20px;
 }
 .page-content {
@@ -39,4 +40,19 @@ a:link {
 }
 a:visited {
 	color: yellow;
+}
+table, th, td {
+	text-align: center;
+	border: 1px solid white;
+}
+table {
+	margin: 0 auto; 
+	width: 90%;
+}
+.menu {
+	text-align: center;
+}
+.contents-table {
+	margin: 0 auto; 
+	width: 30%;
 }
