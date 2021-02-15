@@ -413,8 +413,10 @@
                     <td>9552020891</td>
                     <td>9789552020896</td>
                     <td>ඇස්. ගොඩගේ සහ සහෝදරයෝ</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td><a
+                        href="https://www.goodreads.com/review/show/3804733525?book_show_action=false&from_review_page=1">සබැඳිය</a></td>
+                    <td><a
+                        href="https://www.goodreads.com/book/show/56879778">සබැඳිය</a></td>
                 </tr>
                 <tr>
                     <td>1983</td>
@@ -903,11 +905,15 @@
         </section>
     </div>
 
-    <footer>
-        <hr>
-        &copy; 2016-2020 <address><a href="mailto:fabian.alwis@gmail.com">Fabian de Alwis Gunasekare</a></address>
-        <i>Last updated: December 29, 2020</i>
-    </footer>
+	<footer>
+		<hr>
+		&copy; 2016-<span id="currentYear"></span>
+		<address><a href="mailto:fabian.alwis@gmail.com">Fabian de Alwis Gunasekare</a></address>
+		<i>Last updated: February 15, 2021</i>
+	</footer>
+	<script>
+		document.getElementById("currentYear").innerText = new Date().getFullYear();
+	</script>
 </body>
 
 

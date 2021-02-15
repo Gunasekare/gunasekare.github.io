@@ -14,7 +14,7 @@
 	<div class="page-content">
 		<header>
 			<h1>Fabian's Home Page</h1>
-			<p class="tag-line">Not a fancy home page, just a collection of links to stuff that I like.</p>
+			<p class="tag-line">Not a fancy home page, just a collection of links to various stuff.</p>
 		</header>
 		<section class="various-sections">
 			<h2><b>Professional Links:</b></h2>
@@ -60,7 +60,7 @@
 			</ul>
 		</section>
 		<section class="various-sections">
-			<h2>Censorship and Online Privacy Related Links</h2>
+			<h2>Censorship and Online Privacy Related Links:</h2>
 			<ul>
 				<li>
 					<p><a href="https://keepass.info/" target="_blank">KeePass</a> is the password manager that I have
@@ -86,14 +86,34 @@
 						does not collect data on its users, is open-source and requires less permissions to run.</p>
 				</li>
 				<li>
+					<p>My current browser is <a href="https://www.mozilla.org/en-US/firefox/new/">Mozilla Firefox</a>
+						after
+						migrating from Google Chrome due to privacy issues. So far I'm loving it (a close competitor was
+						the <a href="https://brave.com/">
+							Brave</a> browser)! I use Firefox with <a href="https://duckduckgo.com/">DuckDuckGo</a> as
+						the default search engine and with the
+						extensions <a href="https://github.com/gorhill/uBlock">uBlock Origin</a> (ad-blocking),
+						<a href="https://add0n.com/privacy-settings.html">Privacy Settings</a> (privacy related settings
+						management),
+						<a href="https://decentraleyes.org/">Decentraleyes</a> (for secure content delivery),
+						<a href="https://www.mailvelope.com/en">Mailvelope</a> (encryption for common webmail, for
+						example Gmail), and
+						<a href="https://mybrowseraddon.com/change-timezone.html">Change Timezone/Time Shift</a> (to fix
+						the time displayed on the browser,
+						which usually breaks when the browser is made resistant to fingerprinting).
+					</p>
+				</li>
+				<li>
 					<p>My PGP key ID is 0xBA5EAC5246A39E44 and the Fingerprint is F666 A614 3470 E992 297C 415C BA5E
 						AC52 46A3 9E44.
 						The public key can be found on <a
 							href="https://keys.openpgp.org/vks/v1/by-fingerprint/F666A6143470E992297C415CBA5EAC5246A39E44">
 							keys.openpgp.org</a>, <a
-							href="http://keys.gnupg.net/pks/lookup?search=0xBA5EAC5246A39E44&fingerprint=on&op=get" target="_blank">OpenPGP
+							href="http://keys.gnupg.net/pks/lookup?search=0xBA5EAC5246A39E44&fingerprint=on&op=get"
+							target="_blank">OpenPGP
 							keyserver</a>,
-						<a href="https://keyserver.ubuntu.com/pks/lookup?search=0xBA5EAC5246A39E44&fingerprint=on&op=get" target="_blank">Hockeypuck
+						<a href="https://keyserver.ubuntu.com/pks/lookup?search=0xBA5EAC5246A39E44&fingerprint=on&op=get"
+							target="_blank">Hockeypuck
 							OpenPGP keyserver</a> and
 						<a href="./files/Fabian_de_Alwis_Gunasekare_0x46A39E44_public.asc">here</a>.
 					</p>
@@ -104,14 +124,24 @@
 		<section class="various-sections">
 			<h2>Other Interesting Links:</h2>
 			<ul>
-				<li><a href="https://ifdb.tads.org/showuser?id=t7tj87jw31kzarko" target="_blank">Interactive Fiction
-						titles</a> (text
-					adventure games) that I enjoy.</li>
-				<li>I attempt problems on <a href="https://projecteuler.net/progress=gunasekare" target="_blank">Project
-						Euler</a> every
-					now and then (sign-in required).<br />
+				<li>
+					<p><a href="https://ifdb.tads.org/showuser?id=t7tj87jw31kzarko" target="_blank">Interactive Fiction
+							titles</a> (text adventure games) that I enjoy.</p>
+				</li>
+				<li>
+					<p>A large collection of <a
+							href="https://farfarfutures.wordpress.com/2021/02/12/interactive-fiction-resources/">Interactive
+							Fiction Resources</a>
+						for aspiring developers by Joey Jones.</p>
+				</li>
+				<li>
+					<p>I attempt problems on <a href="https://projecteuler.net/progress=gunasekare"
+							target="_blank">Project
+							Euler</a> every
+						now and then (sign-in required).</p>
 					<figure><img src="https://projecteuler.net/profile/gunasekare.png" alt="Project Euler Stats"
 							height="60" width="200"></figure>
+					
 				</li>
 				<li>
 					<p>I had the privilege to complete the first part of the excellent Coursera course <a
@@ -143,9 +173,13 @@
 
 	<footer>
 		<hr>
-		&copy; 2016-2020 <address><a href="mailto:fabian.alwis@gmail.com">Fabian de Alwis Gunasekare</a></address>
-		<i>Last updated: January 12, 2021</i>
+		&copy; 2016-<span id="currentYear"></span>
+		<address><a href="mailto:fabian.alwis@gmail.com">Fabian de Alwis Gunasekare</a></address>
+		<i>Last updated: February 15, 2021</i>
 	</footer>
+	<script>
+		document.getElementById("currentYear").innerText = new Date().getFullYear();
+	</script>
 </body>
 
 </html>
