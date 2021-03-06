@@ -73,7 +73,10 @@
 						<p><span class="important">NOTE: The UTHR(J) website went offline
 						sometime in early 2021, and I have <a href="./mirrors/uthr.org/index.html" target="_blank">hosted a mirror with all content here</a> (along with fixes to several broken links
 						in the main website). Previous versions (snapshots) of the UTHR(J) website can be found at the <a href="https://web.archive.org/web/2020*/http://uthr.org/index.html" target="_blank">Internet Archive</a>.
-						Please <a href="mailto:fabian.alwis@gmail.com">contact me</a> if you are the owner and have any objections in hosting a mirror.</span></p>
+						Please <a href="mailto:fabian.alwis@gmail.com">contact me</a> if you are the owner and have any objections in hosting a mirror. UPDATE (2021-03-06): Several NBSP (0xa0) characters
+						present in the HTM* files resulting in a � glyph in certain browsers were cleaned.</span></p>
+
+						<!-- Command used: find ./ -type f -name "*.htm*" -exec sed -i 's/\xa0//g' ./*.htm* {} +-->
 				</li>
 			</ul>
 		</section>
@@ -193,7 +196,7 @@
 		<hr>
 		&copy; 2016-<span id="currentYear"></span>
 		<address><a href="mailto:fabian.alwis@gmail.com">Fabian de Alwis Gunasekare</a></address>
-		<i>Last updated: February 28, 2021</i>
+		<i>Last updated: March 06, 2021</i>
 	</footer>
 	<script>
 		document.getElementById("currentYear").innerText = new Date().getFullYear();
